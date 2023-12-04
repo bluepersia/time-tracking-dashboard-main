@@ -14,3 +14,134 @@
     --PaleBlue: hsl(236, 100%, 87%);
 }
 
+
+html 
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.125rem;
+}
+
+body {
+    margin: 0;
+    background-color: var(--Verydarkblue);
+    color: white;
+    padding: 2em 5%;
+}
+.dash_about {
+    background-color: var(--Darkblue);
+    border-radius: 1em;
+}
+
+.dash_about_cols{
+    border-radius: 1em;
+    padding: 1.7em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    background-color: var(--Blue);
+}
+
+.dash_about_img {
+    width: 21%;
+}
+
+.dash_about_report-for {
+    color: var(--PaleBlue);
+    margin-bottom: .5em;
+    font-size: .85rem;
+}
+
+.dash_about_name {
+    margin-top: 0;
+    font-weight: lighter;
+}
+
+.dash_about_time {
+    display: flex;
+    justify-content: center;
+    gap: 3.2em;
+    padding: 1.7em;
+}
+
+.dash_about_time_p {
+    margin: 0;
+}
+
+
+.dash_box {
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    margin-bottom: 3.7em;
+}
+.dash_box.work {
+    background-color: var(--Lightred-work);
+    background-image: url(./images/icon-work.svg);
+}
+
+.dash_box.play {
+    background-color: var(--Softblue-play);
+    background-image: url(./images/icon-play.svg);
+}
+.dash_box.study {
+    background-color: var(--Lightred-study);
+    background-image: url(./images/icon-study.svg);
+}
+.dash_box.exercise {
+    background-color: var(--Limegreen-exercise);
+    background-image: url(./images/icon-exercise.svg);
+}
+.dash_box.social {
+    background-color: var(--Violet-social);
+    background-image: url(./images/icon-social.svg);
+}
+.dash_box.self-care {
+    background-color: var(--Softorange-selfcare);
+    background-image: url(./images/icon-self-care.svg);
+}
+
+.dash_box_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .25em;
+    align-items: center;
+}
+
+
+
+.dash_box_inner {
+    border-radius: 1em;
+    position: relative;
+    top: 2.2em;
+    background-color: var(--Darkblue);
+    padding: 1.5em;
+}
+.dash_box_title, .dash_box_more {
+    margin: 0;
+}
+
+.dash_box_more {
+    font-size: 1.7rem;
+    margin-top: 0;
+    color: var(--PaleBlue)
+}
+
+.dash_box_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash_box_time {
+    margin: 0;
+    font-weight: lighter;
+    font-size: 1.75rem;
+}
+
+.dash_box_last-week {
+    margin: 0;
+    color: var(--PaleBlue);
+    font-size: .8rem;
+}
