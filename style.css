@@ -21,12 +21,21 @@ html
     font-size: 1.125rem;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: var(--Verydarkblue);
     color: white;
     padding: 2em 5%;
 }
+.dash {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .dash_about {
     background-color: var(--Darkblue);
     border-radius: 1em;
@@ -66,8 +75,12 @@ body {
 
 .dash_about_time_p {
     margin: 0;
+    color: var(--Desaturatedblue)
 }
 
+.dash_about_time_p.selected {
+    color: var(--PaleBlue);
+}
 
 .dash_box {
     background-repeat: no-repeat;
@@ -144,4 +157,98 @@ body {
     margin: 0;
     color: var(--PaleBlue);
     font-size: .8rem;
+}
+
+@media (min-width: 800px)
+{
+    .dash {
+        max-width: initial;
+        display: grid;
+        grid-template-columns: repeat(4, 256px);
+        grid-template-rows: repeat(2, 243px);
+        gap: 1.6em;
+    }
+
+
+
+    .dash_about {
+        grid-row: 1 / -1;
+        grid-column: 1 / 2;
+    }
+    
+    .dash_about_cols {
+        display: block;
+        height: 68%;
+        padding: 1.5em;
+    }
+    .dash_about_img {
+        width: 34%;
+    }
+
+    .dash_about_name {
+        font-size: 2rem;
+    }
+
+
+    .dash_about_time {
+        display: block;
+        padding: 1.5em;
+    }
+
+  
+    .dash_about_time_p {
+        margin: 1em;
+        margin-top: 0;
+    }
+
+    
+    .dash_box {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .dash_box_inner {
+        height: 84%;
+    }
+   
+    .dash_box.work {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .dash_box.play {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .dash_box.study {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+
+    .dash_box.exercise {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .dash_box.social {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .dash_box.self-care {
+        grid-column: 4 / -1;
+        grid-row: 2 / 3
+    }
+
+    .dash_box_main {
+        display: block;
+    }
+
+    .dash_box_time {
+        font-size: 3rem;
+    }
+    .dash_box_last-week {
+        margin-top: .5em;
+    }
 }
